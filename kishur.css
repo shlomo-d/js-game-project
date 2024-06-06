@@ -1,0 +1,13 @@
+#xo {
+    display: inline-block;
+    
+  background-color: red;
+  width: 100px;
+  height: 50;
+}
+#sudoko {
+  display: inline-block;
+  background-color: yellow;
+  width: 100px;
+  height: 50;
+}

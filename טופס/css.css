@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+  background-color: rgb(255, 153, 0);
+  height: 180px;
+  /* display: flex;
+   justify-content: center;
+  align-items: center; */
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-family:'Gill Sans';
+  font-size: 70px;
+}
+img {
+  height: 60px;
+  position: absolute;
+}
+main {
+  height: 300px;
+  background-color: rgb(182, 217, 238);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-family: 'Gill Sans';
+  font-size: x-large;
+}
+#main1{
+    height: 400px;
+}
+form input {
+  margin: 30px;
+  height: 20px;
+}
+#btns {
+  text-align: center;
+  height: 250px;
+  margin: 20px;
+  padding: 60px;
+  
+}
+.switch {
+  margin: 30px;
+  font-size: x-large;
+  font-family: 'Gill Sans';
+  padding: 5px 50px;
+  
+}
+.switch:hover {
+  cursor:cell;
+}
+span {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.return {
+    font-size: 30px;
+  padding: 3px 40px;
+  font-family: 'Gill Sans';
+}
+.return:hover {
+    cursor: cell;
+}
+footer {
+    font-size: 40px;
+  height: 150px;
+  background-color: rgb(128, 165, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans';
+}
