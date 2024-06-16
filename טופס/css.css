@@ -2,6 +2,28 @@
   margin: 0;
   padding: 0;
 }
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* עיצוב למסכים ניידים כמו אייפון */
+  label {
+    font-size: 0.9em;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 90%;
+    margin: 5px 0;
+  }
+  button[type="submit"] {
+    width: 90%;
+  }
+}
 header {
   position: relative;
   background-color: rgb(255, 153, 0);

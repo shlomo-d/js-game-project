@@ -21,40 +21,35 @@ function signUp() {
   } else {
     nameError.style.display = "none";
   }
-
   if (!password) {
     passwordError.style.display = "inline";
     valid = false;
   } else {
     passwordError.style.display = "none";
   }
-
   if (!email || !validateEmail(email)) {
     emailError.style.display = "inline";
     valid = false;
   } else {
     emailError.style.display = "none";
   }
-
   if (!phone || !validatePhone(phone)) {
     phoneError.style.display = "inline";
     valid = false;
   } else {
     phoneError.style.display = "none";
   }
-
   if (valid) {
     let users = JSON.parse(localStorage.getItem("users")) || [];
     if (users.find(user => user.name === name)) {
-      alert("User exists! Please log in.");
+      document.getElementById("message").innerHTML = "<div>User exists! Please log in.</div>";
     } else {
       users.push({ name, password, email, phone });
       localStorage.setItem("users", JSON.stringify(users));
-      alert("User registered successfully!");
+      document.getElementById("message").innerHTML = "<div>User registered successfully!</div>";
       return true;
     }
   }
-
   return false;
 }
 // פונקציה לבדוק אם המשתמש כבר קיים ולבצע התחברות
@@ -72,6 +67,7 @@ function logIn() {
       alert("User not found. sign up.");
     }
   }
+  window.location.replace("/kishur.html");
 }
 function resetForm() {
   document.getElementById("loginForm").reset();
